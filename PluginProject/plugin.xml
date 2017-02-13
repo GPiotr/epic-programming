@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            name="Epic Editor"
+            extensions="java"
+            icon="icons/epic.gif"
+            class="pl.gieldon.epic.editor.EpicEditor"
+            id="pl.gieldon.epic.editor.EpicEditor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+         
+      <page
+            class="pl.gieldon.epic.preferences.WorkbenchPreferencePage1"
+            id="pl.gieldon.epic.preferences.page1"
+            name="Epic Preference Page">
+      </page>
+      
+   </extension>
+   
+   <extension point="org.eclipse.core.runtime.preferences">
+   		<scope name="WorkbenchPreferencePage1" class="pl.gieldon.epic.preferences.WorkbenchPreferencePage1"/>
+   		<initializer class ="pl.gieldon.epic.preferences.EpicPreferencesInitializer"/>
+   </extension>
+
+</plugin>

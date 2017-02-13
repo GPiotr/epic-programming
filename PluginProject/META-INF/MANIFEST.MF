@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PluginProject
+Bundle-SymbolicName: PluginProject; singleton:=true
+Bundle-Version: 0.0.1.qualifier
+Bundle-Activator: pl.gieldon.epic.plugin.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ org.eclipse.jdt.ui;bundle-version="3.6.2",
+ org.eclipse.jdt.core;bundle-version="3.6.2"
+Bundle-ActivationPolicy: lazy
