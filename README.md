@@ -1,5 +1,8 @@
 # epic-programming v.0.0.1 ALPHA
 
+##VIDEO:
+#Click to go to youtube (there is sound ;))
+
 [![Epic Programming Video](https://j.gifs.com/zmE47m.gif)](http://www.youtube.com/watch?v=jDk2sW7rA_g)
 
 ##WELCOME##
