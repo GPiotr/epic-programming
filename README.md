@@ -1,6 +1,6 @@
 # epic-programming v.0.0.1 ALPHA
 
-[![Epic Programming Video](https://img.youtube.com/vi/jDk2sW7rA_g/0.jpg)](http://www.youtube.com/watch?v=jDk2sW7rA_g)
+[![Epic Programming Video](https://j.gifs.com/zmE47m.gif)](http://www.youtube.com/watch?v=jDk2sW7rA_g)
 
 ##WELCOME##
 Hi there!
