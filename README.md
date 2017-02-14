@@ -15,7 +15,7 @@ The Eclipse plug-in is still in development but present version 0.0.1 is stable.
 
 Plug-in is associated with Java files, but still needs to use "Open With" option from context menu. 
 
-Plugin works with every Eclipse theme (Classi, Dark etc.)
+Plugin works with every Eclipse theme (Classic, Dark etc.)
 
 
 
