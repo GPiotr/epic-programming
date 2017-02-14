@@ -9,6 +9,8 @@ import org.eclipse.jface.preference.IPreferenceStore;
 import pl.gieldon.epic.plugin.Activator;
 
 /**
+ * This class sets default values for preferences on first use.
+ * 
  * @author Piotr Gie³don
  *
  */

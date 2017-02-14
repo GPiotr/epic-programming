@@ -21,10 +21,8 @@ import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.PaintEvent;
 import org.eclipse.swt.events.PaintListener;
-import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.editors.text.TextEditor;
-import org.osgi.service.prefs.Preferences;
 
 import pl.gieldon.epic.model.Frame;
 import pl.gieldon.epic.model.Particles;
@@ -34,6 +32,13 @@ import pl.gieldon.epic.util.ParticleGenerator;
 import sun.audio.AudioPlayer;
 import sun.audio.AudioStream;
 
+/**
+ * This is the main class, where all magic happens.
+ * We've got here all Listeners and redrawing loop.
+ * 
+ * @author Piotr Gie³don
+ *
+ */
 public class EpicEditor extends TextEditor {
 
 	// VARIABLES
@@ -63,10 +68,14 @@ public class EpicEditor extends TextEditor {
 	private boolean prefIsDownwardDrawn = true;
 
 	
-	//CONSTRUCTOR
+	/**
+	 * CONSTRUCTOR
+	 */
 	public EpicEditor() {
 		super();
+		
 		particleList = new ArrayList<Particles>();
+		
 		JavaTextTools textTools = JavaPlugin.getDefault().getJavaTextTools();
 		setSourceViewerConfiguration(new JavaSourceViewerConfiguration(textTools.getColorManager(),
 				getPreferenceStore(), this, IJavaPartitions.JAVA_PARTITIONING));
@@ -130,6 +139,10 @@ public class EpicEditor extends TextEditor {
 		prefShakePower = preferences.getInt(WorkbenchPreferencePage1.SHAKE_POWER, 10);
 		prefTimerInterval = preferences.getInt(WorkbenchPreferencePage1.TIMER_INTERVAL, 1);
 		prefParticleAmount = preferences.getInt(WorkbenchPreferencePage1.PARTICLE_AMOUNT, 20);
+		
+		/*
+		 * Load preferences is called only once, so we do not need StringBuilder etc. ;)
+		 */
 		System.out.println(WorkbenchPreferencePage1.IS_MUTED + ": " + prefIsMuted);
 		System.out.println(WorkbenchPreferencePage1.IS_SHAKED + ": " + prefIsShaked);
 		System.out.println(WorkbenchPreferencePage1.IS_UPWARD_DRAWN + ": " + prefIsUpwardDrawn);

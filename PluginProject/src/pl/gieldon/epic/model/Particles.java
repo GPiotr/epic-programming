@@ -1,13 +1,13 @@
-/**
- * This class holds Frame object, and also all particle locations for all frames
- * It keeps also the font color.
- */
 package pl.gieldon.epic.model;
 
 import org.eclipse.swt.graphics.Color;
 import org.eclipse.swt.graphics.Point;
 
 /**
+ * 
+ * This class holds Frame object and all particle locations for all frames
+ * It keeps also the font color.
+ * 
  * @author Piotr Gie³don
  *
  */

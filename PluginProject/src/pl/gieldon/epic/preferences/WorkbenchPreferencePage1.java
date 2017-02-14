@@ -16,6 +16,8 @@ import pl.gieldon.epic.plugin.Activator;
 
 /**
  * @author Piotr Gie³don
+ * 
+ * In here we programmaticaly create Preferences page for this Epic Plugin
  *
  */
 public class WorkbenchPreferencePage1 extends FieldEditorPreferencePage implements IWorkbenchPreferencePage {

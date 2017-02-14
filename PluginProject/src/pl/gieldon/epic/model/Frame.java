@@ -1,13 +1,14 @@
-/**
- *  This class holds two fields for particles.
- *  FrameNumber field contains frame number which should be animated when comes to redraw.
- *  Point is a coordinates of Caret at the moment when key was pressed.
- */
+
 package pl.gieldon.epic.model;
 
 import org.eclipse.swt.graphics.Point;
 
 /**
+ * 
+ * This class holds two fields for particles.
+ * FrameNumber field contains frame number which should be animated when comes to redraw.
+ * Point is a coordinates of Caret at the moment when key was pressed.
+ *  
  * @author Piotr Gie³don
  *
  */
