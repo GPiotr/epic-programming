@@ -52,7 +52,7 @@ public class WorkbenchPreferencePage1 extends FieldEditorPreferencePage implemen
 		
 		addField(new BooleanFieldEditor(IS_UPWARD_DRAWN, "Draw upward particles", getFieldEditorParent()));
 		
-		addField(new BooleanFieldEditor(IS_DOWNWARD_DRAWN, "Drawn downward particles", getFieldEditorParent()));
+		addField(new BooleanFieldEditor(IS_DOWNWARD_DRAWN, "Draw downward particles", getFieldEditorParent()));
 
 	}
 
